@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>To-Do List</title>
+    <link href="app.css" rel="stylesheet">
+</head>
+<body class="justify-content-center d-flex">
+    <div class="container-outside pl-4 col-md-7 rounded w-100">
+        <div class="row display-flex pt-3">
+            <div class="w-50 row justify-content-start pl-4 text-light">
+                <p class="pt-2 pl-3 note">Add a note</p>
+            </div>
+            <div class="w-50 row justify-content-end">
+                <button class="plus rounded" onclick="addNote()">+</button>
+            </div>
+        </div>
+        <div class="container pl-4 row d-flex justify-content-center w-100">
+            <div class="box">
+                    <div class="content">
+                        <p class="title">Title</p>
+                        <p class="text">Text</p>
+                    </div>
+                <div class="btns">
+                    <button class="edit" onclick="edit(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="delete" onclick="remove(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <!-- <path fill="none" d="M0 0h24v24H0z"/>  -->
+                            <path d="M20 7v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7H2V5h20v2h-2zm-9 3v7h2v-7h-2zM7 2h10v2H7V2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

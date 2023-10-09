@@ -1,0 +1,68 @@
+.container-outside {
+    margin-top: 10vh;
+    background-color: rgba(92, 1, 92, 0.497);
+}
+.box{
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.box .text {
+    opacity: 0;
+    margin-top: -50px;
+
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.box:hover .text {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.box button {
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.plus {
+    border: none;
+    background-color: transparent;
+    font-size: 32px;
+    color: white;
+    padding: 0 10px;
+}
+.note {
+    font-size: 22px;
+}
+.content {
+    display: inline-block;
+    margin: 10px;
+}
+.btns {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.edit, .delete {
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+.title-inp, .text-inp {
+    width: 99%;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 3px;
+}
+.title-inp {
+    font-size: 18px;
+}
+.text-inp {
+    margin-top: 10px;
+}
